@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제3</title>
+    <style>
+        .topic {
+            margin: 0 auto;
+            background-color: aqua;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+            margin-bottom : 200px;
+        }
+        .boxquestion {
+            text-align: center;
+            margin: 0 auto;
+        }
+        .box {
+            background-color: gray;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            display : flex;
+            justify-content: center;
+            align-items : center;
+        }
+        .button {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            text-align: center;
+            align-items : center;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="topic">파이썬과제로 이동하기</div>
+    <div class="boxquestion">과제링크로 이동하시겠습니까?</div>
+    <div class="box">
+        <div class = "button">
+            <a id = "link" href="https://github.com/shpark9346/test">버튼</a>
+        </div>
+        <p id = 'warning'></p>
+    </div>
+
+    <script 
+    src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script>
+        $('#link').click(function(){
+            alert('진짜 이동하실건가요?');
+        });
+    </script>
+</body>
+</html> 
